@@ -25,28 +25,72 @@
 
     & &-swiper {
       position: relative;
-      padding: 10px 25px 50px 25px;
-      margin: 0 -30px;
 
-      &::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 30px;
-        height: 100%;
-        z-index: 1;
-        background: linear-gradient(90deg, $white, transparent);
-      }
-      &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        width: 30px;
-        height: 100%;
-        background: linear-gradient(270deg, $white, transparent);
-        z-index: 2;
+      .swiper {
+        margin: 0 -25px;
+        padding: 10px 25px 50px 25px;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 30px;
+          height: 100%;
+          z-index: 1;
+          background: linear-gradient(90deg, $white, transparent);
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          right: 0;
+          width: 30px;
+          height: 100%;
+          background: linear-gradient(270deg, $white, transparent);
+          z-index: 2;
+        }
+        &-arrow-prev,
+        &-arrow-next {
+          position: absolute;
+          top: 40%;
+          font-size: 20px;
+          width: 2em;
+          height: 2em;
+          z-index: 1;
+          background: rgba($black, 0.5);
+          border-radius: 50%;
+          transition: 0.2s ease-out;
+          opacity: 0.5;
+          color: $white;
+
+          //display
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            opacity: 1;
+          }
+          &.swiper-button-disabled {
+            opacity: 0;
+          }
+
+          .custIcon {
+            pointer-events: none;
+            &:before {
+              border-width: 3px;
+            }
+          }
+        }
+        &-arrow-prev {
+          left: 0;
+          transform: translateX(calc(-100% - 10px));
+        }
+        &-arrow-next {
+          right: 0;
+          transform: translateX(calc(100% + 10px));
+        }
       }
     }
   }
@@ -95,6 +139,24 @@
   }
 }
 
+@mixin index-1160 {
+  .slider {
+    &__inner {
+      & &-swiper {
+        .swiper {
+          &-arrow-prev {
+            transform: translateX(-50%);
+            opacity: 0.8;
+          }
+          &-arrow-next {
+            transform: translateX(50%);
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
 @mixin index-1025 {
   .slider {
     &__inner {
@@ -111,6 +173,14 @@
       .tabs {
         &__item {
           font-size: 16px;
+        }
+      }
+      & &-swiper {
+        .swiper {
+          &-arrow-prev,
+          &-arrow-next {
+            display: none;
+          }
         }
       }
     }

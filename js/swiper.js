@@ -1,8 +1,8 @@
 const settings = {
   default: {
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     // loop: true,
-    spaceBetween: 25,
+    spaceBetween: 15,
     breakpoints: {
       480: {
         slidesPerView: 1.5,
@@ -21,13 +21,10 @@ const settings = {
         spaceBetween: 25,
       },
       1100: {
-        slidesPerView: 4,
+        slidesPerView: 3.5,
         spaceBetween: 15,
       },
-      1280: {
-        slidesPerView: 4,
-        spaceBetween: 25,
-      },
+     
     },
   },
 };
