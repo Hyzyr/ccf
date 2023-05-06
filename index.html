@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" href="images/logo-small.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <title>%ProjectName% | Home</title>
   </head>
 
@@ -14,39 +19,152 @@
       <!-- #header -->
       <header class="header" id="header">
         <div class="autoContainer">
-          <div class="header__inner">
-            <a href="/" class="header__inner-logo">
-              <span class="logo">
-                <img src="images/logo-white.svg" alt="%ProjectName%" />
-              </span>
-            </a>
-            <div class="nav" id="menu">
-              <div class="nav__inner">
-                <div class="nav__inner-group">
-                  <a href="" class="nav__inner-link">Lorem</a>
-                  <a href="" class="nav__inner-link">Lorem</a>
-                  <a href="" class="nav__inner-link">Lorem</a>
-                </div>
-                <div class="nav__inner-group">
-                  <a href="" class="nav__inner-link">Lorem</a>
-                  <a href="" class="nav__inner-link">Lorem</a>
-                  <a href="" class="nav__inner-link">Lorem</a>
-                </div>
-              </div>
-            </div>
-            <button class="burger" id="menuBtn"></button>
-          </div>
+          <div class="header__inner">Header</div>
         </div>
       </header>
       <!-- #header end -->
 
-      <!-- #hero -->
-      <section class="hero">
+      <!-- #slider -->
+      <section class="slider">
         <div class="autoContainer">
-          <div class="hero__inner"></div>
+          <div class="slider__inner">
+            <div class="slider__inner-header">
+              <div class="slider__inner-header-title">
+                <small>Actualidad </small>
+                <h3>Para todos</h3>
+              </div>
+              <div class="tabs">
+                <button class="tabs__item active">Todos</button>
+                <button class="tabs__item">De su interés</button>
+                <button class="tabs__item">Actualidad</button>
+                <button class="tabs__item">Boletines</button>
+              </div>
+              <button class="button button--outlined button--primary">
+                Ver todos <span class="custIcon custIcon--right"></span>
+              </button>
+            </div>
+            <div class="slider__inner-swiper swiper" data-swiper="default">
+              <div class="swiper-wrapper">
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-image">
+                    <div class="ratioImage">
+                      <img src="images/home/swiper/item-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="slider__item-content">
+                    <div class="slider__item-badge">Todos</div>
+                    <strong>Devoluciones de dinero Ley 1780 de 2010</strong>
+                    <small>29 de marzo 2023</small>
+                  </div>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-image">
+                    <div class="ratioImage">
+                      <img src="images/home/swiper/item-2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="slider__item-content">
+                    <div class="slider__item-badge">De su interés</div>
+                    <strong
+                      >La CCF continúa premiando a los comerciantes que renueven
+                      su matricula mercantil oportunamente</strong
+                    >
+                    <small>29 de marzo 2023</small>
+                  </div>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-image">
+                    <div class="ratioImage">
+                      <img src="images/home/swiper/item-3.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="slider__item-content">
+                    <div class="slider__item-badge">Actualidad</div>
+                    <strong
+                      >En desarrollo de la campaña de prevención de la Extorsión
+                      en la Jurisdicción</strong
+                    >
+                    <small>29 de marzo 2023</small>
+                  </div>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-image">
+                    <div class="ratioImage">
+                      <img src="images/home/swiper/item-4.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="slider__item-content">
+                    <div class="slider__item-badge">Boletines</div>
+                    <strong
+                      >La CCF continúa premiando a los comerciantes que renueven
+                      su matricula mercantil oportunamente</strong
+                    >
+                    <small>29 de marzo 2023</small>
+                  </div>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-image">
+                    <div class="ratioImage">
+                      <img src="images/home/swiper/item-1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="slider__item-content">
+                    <div class="slider__item-badge">Todos</div>
+                    <strong>Devoluciones de dinero Ley 1780 de 2010</strong>
+                    <small>29 de marzo 2023</small>
+                  </div>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-image">
+                    <div class="ratioImage">
+                      <img src="images/home/swiper/item-2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="slider__item-content">
+                    <div class="slider__item-badge">De su interés</div>
+                    <strong
+                      >La CCF continúa premiando a los comerciantes que renueven
+                      su matricula mercantil oportunamente</strong
+                    >
+                    <small>29 de marzo 2023</small>
+                  </div>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-image">
+                    <div class="ratioImage">
+                      <img src="images/home/swiper/item-3.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="slider__item-content">
+                    <div class="slider__item-badge">Actualidad</div>
+                    <strong
+                      >En desarrollo de la campaña de prevención de la Extorsión
+                      en la Jurisdicción</strong
+                    >
+                    <small>29 de marzo 2023</small>
+                  </div>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-image">
+                    <div class="ratioImage">
+                      <img src="images/home/swiper/item-4.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="slider__item-content">
+                    <div class="slider__item-badge">Boletines</div>
+                    <strong
+                      >La CCF continúa premiando a los comerciantes que renueven
+                      su matricula mercantil oportunamente</strong
+                    >
+                    <small>29 de marzo 2023</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- #hero end -->
+      <!-- #slider end -->
 
       <!-- #footer -->
       <footer class="footer">
@@ -56,6 +174,7 @@
       </footer>
       <!-- #footer end -->
     </div>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/swiper.js"></script>
   </body>
 </html>

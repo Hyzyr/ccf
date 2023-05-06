@@ -1,117 +1,32 @@
 const settings = {
-  construction: {
-    loop: false,
-    slidesPerView: 1.2,
-    // slidesPerGroup: 2,
-    // slidesPerGroupSkip: 2,
-    spaceBetween: 5,
-    breakpoints: {
-      460: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      768: {
-        slidesPerView: 2.5,
-        spaceBetween: 10,
-      },
-      840: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-      1160: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-      },
-    },
-  },
-  electrical: {
-    loop: false,
-    slidesPerView: 1.2,
-    spaceBetween: 5,
-    breakpoints: {
-      460: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      768: {
-        slidesPerView: 2.5,
-        spaceBetween: 10,
-      },
-      840: {
-        slidesPerView: 3,
-        spaceBetween: 5,
-      },
-      1160: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-    },
-  },
-  feedbacks: {
-    loop: true,
-    centeredSlides: true,
-    watchSlidesProgress: true,
-    watchOverflow: true,
-    slidesPerView: 1.2,
-    spaceBetween: 5,
-    breakpoints: {
-      480: {
-        slidesPerView: 1.5,
-        spaceBetween: 0,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      768: {
-        slidesPerView: 2.5,
-        spaceBetween: 10,
-      },
-      940: {
-        slidesPerView: 3,
-        spaceBetween: 0,
-      },
-      1025: {
-        slidesPerView: 3,
-        spaceBetween: 5,
-      },
-      1280: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-    },
-  },
-  projects: {
+  default: {
     slidesPerView: 1,
     // loop: true,
-    spaceBetween: 0,
-    grid: {
-      rows: 2,
-    },
+    spaceBetween: 25,
     breakpoints: {
       480: {
         slidesPerView: 1.5,
-        spaceBetween: 0,
+        spaceBetween: 20,
       },
       640: {
         slidesPerView: 2,
-        spaceBetween: 0,
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 2.5,
         spaceBetween: 10,
       },
-      940: {
-        slidesPerView: 3,
-        spaceBetween: 0,
-      },
       1025: {
         slidesPerView: 3,
-        spaceBetween: 5,
+        spaceBetween: 25,
+      },
+      1100: {
+        slidesPerView: 4,
+        spaceBetween: 15,
       },
       1280: {
-        slidesPerView: 3,
-        spaceBetween: 10,
+        slidesPerView: 4,
+        spaceBetween: 25,
       },
     },
   },

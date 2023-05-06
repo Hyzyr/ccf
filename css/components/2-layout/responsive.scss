@@ -9,23 +9,27 @@
   .autoContainer {
     padding: 0 30px;
   }
-  @include header-1025;
+  @include index-1025;
 }
 
 @media (max-width: 940px) {
   .autoContainer {
     padding: 0 25px;
   }
+  @include index-940;
 }
 @media (max-width: 768px) {
   .autoContainer {
     padding: 0 15px;
   }
+  @include index-768;
 }
 @media (max-width: 580px) {
   ._hideMob {
     display: none;
   }
+  @include index-580;
 }
 @media (max-width: 460px) {
+  @include index-460;
 }
