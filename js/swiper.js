@@ -24,7 +24,6 @@ const settings = {
         slidesPerView: 3.5,
         spaceBetween: 15,
       },
-     
     },
   },
 };
@@ -38,8 +37,6 @@ document.querySelectorAll(".swiper").forEach((swiperSlider) => {
   const next = parentElement.querySelector(".swiper-arrow-next");
   const dots = parentElement.querySelector(".swiper-dots");
 
-  console.log("parentElement");
-  console.log(parentElement);
   new Swiper(swiperSlider, {
     ...settings[settingsKey],
     // // If we need pagination
@@ -65,10 +62,38 @@ document.querySelectorAll(".swiper").forEach((swiperSlider) => {
   });
 });
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  grid: {
-    rows: 2,
-  },
-  spaceBetween: 30,
-});
+const initSwiper = (swiperSlider) => {
+  const settingsKey = swiperSlider.getAttribute("data-swiper");
+  const parentElement = swiperSlider.hasAttribute("data-swiper-parent")
+    ? document.querySelector(swiperSlider.getAttribute("data-swiper-parent"))
+    : swiperSlider.parentElement;
+  const prev = parentElement.querySelector(".swiper-arrow-prev");
+  const next = parentElement.querySelector(".swiper-arrow-next");
+  const dots = parentElement.querySelector(".swiper-dots");
+
+  new Swiper(swiperSlider, {
+    ...settings[settingsKey],
+    // // If we need pagination
+    // pagination: {
+    //   el: ".swiper-pagination",
+    // },
+
+    // // Navigation arrows
+    navigation:
+      next && prev
+        ? {
+            nextEl: next,
+            prevEl: prev,
+          }
+        : {},
+
+    pagination: dots
+      ? {
+          el: dots,
+          clickable: true,
+        }
+      : {},
+  });
+};
+
+document.querySelectorAll(".swiper").forEach(initSwiper);

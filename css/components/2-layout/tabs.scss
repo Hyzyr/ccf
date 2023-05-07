@@ -1,0 +1,52 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  &__item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 1.5em;
+    border: 1px solid transparent;
+    border-radius: 0.5em;
+
+    color: rgba($black, 0.6);
+    font-size: 20px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: 1;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgba($primary, 0.05);
+      border-color: $primary;
+      color: $primary;
+    }
+    &.active {
+      color: $white;
+      background: $black-3;
+      border-color: $black-3;
+
+      &._green {
+        color: $white;
+        background: $green;
+        border-color: $green;
+      }
+      &._orange {
+        color: $white;
+        background: $orange;
+        border-color: $orange;
+      }
+      &._primary {
+        color: $white;
+        background: $primary;
+        border-color: $primary;
+      }
+    }
+  }
+}

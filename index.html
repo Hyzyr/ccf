@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <title>%ProjectName% | Home</title>
+    <title>CCF | Home</title>
   </head>
 
   <body>
@@ -33,39 +33,51 @@
                 <small>Actualidad </small>
                 <h3>Para todos</h3>
               </div>
-              <div class="tabs">
-                <button class="tabs__item active">Todos</button>
-                <button class="tabs__item">De su interés</button>
-                <button class="tabs__item">Actualidad</button>
-                <button class="tabs__item">Boletines</button>
+              <div class="tabs" id="sliderTabs">
+                <button class="tabs__item" data-filter="Todos">Todos</button>
+                <button class="tabs__item _green" data-filter="De su interés">
+                  De su interés
+                </button>
+                <button class="tabs__item _orange" data-filter="Actualidad">
+                  Actualidad
+                </button>
+                <button class="tabs__item _primary" data-filter="Boletines">
+                  Boletines
+                </button>
               </div>
-              <button class="button button--outlined button--primary">
+              <button class="button button--outlined">
                 Ver todos <span class="custIcon custIcon--right"></span>
               </button>
             </div>
             <div class="slider__inner-swiper">
-              <div class="swiper" data-swiper="default">
+              <div class="swiper" data-swiper="default" id="slider">
                 <div class="swiper-wrapper">
-                  <div class="slider__item swiper-slide">
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Boletines"
+                  >
                     <div class="slider__item-image">
                       <div class="ratioImage">
                         <img src="images/home/swiper/item-1.png" alt="" />
                       </div>
                     </div>
                     <div class="slider__item-content">
-                      <div class="slider__item-badge">Todos</div>
+                      <div class="slider__item-badge _primary">Boletines</div>
                       <strong>Devoluciones de dinero Ley 1780 de 2010</strong>
                       <small>29 de marzo 2023</small>
                     </div>
                   </div>
-                  <div class="slider__item swiper-slide">
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="De su interés"
+                  >
                     <div class="slider__item-image">
                       <div class="ratioImage">
                         <img src="images/home/swiper/item-2.png" alt="" />
                       </div>
                     </div>
                     <div class="slider__item-content">
-                      <div class="slider__item-badge">De su interés</div>
+                      <div class="slider__item-badge _green">De su interés</div>
                       <strong
                         >La CCF continúa premiando a los comerciantes que
                         renueven su matricula mercantil oportunamente</strong
@@ -73,14 +85,17 @@
                       <small>29 de marzo 2023</small>
                     </div>
                   </div>
-                  <div class="slider__item swiper-slide">
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Actualidad"
+                  >
                     <div class="slider__item-image">
                       <div class="ratioImage">
                         <img src="images/home/swiper/item-3.png" alt="" />
                       </div>
                     </div>
                     <div class="slider__item-content">
-                      <div class="slider__item-badge">Actualidad</div>
+                      <div class="slider__item-badge _orange">Actualidad</div>
                       <strong
                         >En desarrollo de la campaña de prevención de la
                         Extorsión en la Jurisdicción</strong
@@ -88,14 +103,17 @@
                       <small>29 de marzo 2023</small>
                     </div>
                   </div>
-                  <div class="slider__item swiper-slide">
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Boletines"
+                  >
                     <div class="slider__item-image">
                       <div class="ratioImage">
                         <img src="images/home/swiper/item-4.png" alt="" />
                       </div>
                     </div>
                     <div class="slider__item-content">
-                      <div class="slider__item-badge">Boletines</div>
+                      <div class="slider__item-badge _primary">Boletines</div>
                       <strong
                         >La CCF continúa premiando a los comerciantes que
                         renueven su matricula mercantil oportunamente</strong
@@ -103,26 +121,32 @@
                       <small>29 de marzo 2023</small>
                     </div>
                   </div>
-                  <div class="slider__item swiper-slide">
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="De su interés"
+                  >
                     <div class="slider__item-image">
                       <div class="ratioImage">
                         <img src="images/home/swiper/item-1.png" alt="" />
                       </div>
                     </div>
                     <div class="slider__item-content">
-                      <div class="slider__item-badge">Todos</div>
+                      <div class="slider__item-badge _green">De su interés</div>
                       <strong>Devoluciones de dinero Ley 1780 de 2010</strong>
                       <small>29 de marzo 2023</small>
                     </div>
                   </div>
-                  <div class="slider__item swiper-slide">
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Actualidad"
+                  >
                     <div class="slider__item-image">
                       <div class="ratioImage">
                         <img src="images/home/swiper/item-2.png" alt="" />
                       </div>
                     </div>
                     <div class="slider__item-content">
-                      <div class="slider__item-badge">De su interés</div>
+                      <div class="slider__item-badge _orange">Actualidad</div>
                       <strong
                         >La CCF continúa premiando a los comerciantes que
                         renueven su matricula mercantil oportunamente</strong
@@ -130,14 +154,17 @@
                       <small>29 de marzo 2023</small>
                     </div>
                   </div>
-                  <div class="slider__item swiper-slide">
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Boletines"
+                  >
                     <div class="slider__item-image">
                       <div class="ratioImage">
                         <img src="images/home/swiper/item-3.png" alt="" />
                       </div>
                     </div>
                     <div class="slider__item-content">
-                      <div class="slider__item-badge">Actualidad</div>
+                      <div class="slider__item-badge _primary">Boletines</div>
                       <strong
                         >En desarrollo de la campaña de prevención de la
                         Extorsión en la Jurisdicción</strong
@@ -145,14 +172,155 @@
                       <small>29 de marzo 2023</small>
                     </div>
                   </div>
-                  <div class="slider__item swiper-slide">
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="De su interés"
+                  >
                     <div class="slider__item-image">
                       <div class="ratioImage">
                         <img src="images/home/swiper/item-4.png" alt="" />
                       </div>
                     </div>
                     <div class="slider__item-content">
-                      <div class="slider__item-badge">Boletines</div>
+                      <div class="slider__item-badge _green">De su interés</div>
+                      <strong
+                        >La CCF continúa premiando a los comerciantes que
+                        renueven su matricula mercantil oportunamente</strong
+                      >
+                      <small>29 de marzo 2023</small>
+                    </div>
+                  </div>
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Actualidad"
+                  >
+                    <div class="slider__item-image">
+                      <div class="ratioImage">
+                        <img src="images/home/swiper/item-1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="slider__item-content">
+                      <div class="slider__item-badge _orange">Actualidad</div>
+                      <strong>Devoluciones de dinero Ley 1780 de 2010</strong>
+                      <small>29 de marzo 2023</small>
+                    </div>
+                  </div>
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Boletines"
+                  >
+                    <div class="slider__item-image">
+                      <div class="ratioImage">
+                        <img src="images/home/swiper/item-2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="slider__item-content">
+                      <div class="slider__item-badge _primary">Boletines</div>
+                      <strong
+                        >La CCF continúa premiando a los comerciantes que
+                        renueven su matricula mercantil oportunamente</strong
+                      >
+                      <small>29 de marzo 2023</small>
+                    </div>
+                  </div>
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="De su interés"
+                  >
+                    <div class="slider__item-image">
+                      <div class="ratioImage">
+                        <img src="images/home/swiper/item-3.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="slider__item-content">
+                      <div class="slider__item-badge _green">De su interés</div>
+                      <strong
+                        >En desarrollo de la campaña de prevención de la
+                        Extorsión en la Jurisdicción</strong
+                      >
+                      <small>29 de marzo 2023</small>
+                    </div>
+                  </div>
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Actualidad"
+                  >
+                    <div class="slider__item-image">
+                      <div class="ratioImage">
+                        <img src="images/home/swiper/item-4.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="slider__item-content">
+                      <div class="slider__item-badge _orange">Actualidad</div>
+                      <strong
+                        >La CCF continúa premiando a los comerciantes que
+                        renueven su matricula mercantil oportunamente</strong
+                      >
+                      <small>29 de marzo 2023</small>
+                    </div>
+                  </div>
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Boletines"
+                  >
+                    <div class="slider__item-image">
+                      <div class="ratioImage">
+                        <img src="images/home/swiper/item-1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="slider__item-content">
+                      <div class="slider__item-badge _primary">Boletines</div>
+                      <strong>Devoluciones de dinero Ley 1780 de 2010</strong>
+                      <small>29 de marzo 2023</small>
+                    </div>
+                  </div>
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="De su interés"
+                  >
+                    <div class="slider__item-image">
+                      <div class="ratioImage">
+                        <img src="images/home/swiper/item-2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="slider__item-content">
+                      <div class="slider__item-badge _green">De su interés</div>
+                      <strong
+                        >La CCF continúa premiando a los comerciantes que
+                        renueven su matricula mercantil oportunamente</strong
+                      >
+                      <small>29 de marzo 2023</small>
+                    </div>
+                  </div>
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Actualidad"
+                  >
+                    <div class="slider__item-image">
+                      <div class="ratioImage">
+                        <img src="images/home/swiper/item-3.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="slider__item-content">
+                      <div class="slider__item-badge _orange">Actualidad</div>
+                      <strong
+                        >En desarrollo de la campaña de prevención de la
+                        Extorsión en la Jurisdicción</strong
+                      >
+                      <small>29 de marzo 2023</small>
+                    </div>
+                  </div>
+                  <div
+                    class="slider__item swiper-slide"
+                    data-filter="Boletines"
+                  >
+                    <div class="slider__item-image">
+                      <div class="ratioImage">
+                        <img src="images/home/swiper/item-4.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="slider__item-content">
+                      <div class="slider__item-badge _primary">Boletines</div>
                       <strong
                         >La CCF continúa premiando a los comerciantes que
                         renueven su matricula mercantil oportunamente</strong
@@ -179,12 +347,235 @@
       <!-- #footer -->
       <footer class="footer">
         <div class="autoContainer">
-          <div class="footer__inner"></div>
+          <div class="footer__inner">
+            <div class="footer__inner-tabs">
+              <div class="footer__tab active">
+                <div class="footer__tab-title">
+                  <span>Oficina principal </span>
+                  <strong>Facatativá</strong>
+                </div>
+                <ul class="footer__tab-list">
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-pin.png" alt="map pin" />
+                    </div>
+                    <p>Carrera 3 No. 4 - 60</p>
+                  </li>
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-phone.png" alt="phone" />
+                    </div>
+                    <p>
+                      <a class="inlinLink" href="tel:+57 (601) 890 28 33"
+                        >57 (601) 890 28 33</a
+                      >
+                    </p>
+                  </li>
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-clock.png" alt="" />
+                    </div>
+                    <p>
+                      Lunes a viernes de <br />
+                      <span>08:00 a.m. a 12:00 p.m</span> <br />
+                      <span>02:00 p.m. a 05:00 p.m.</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__tab">
+                <div class="footer__tab-title">
+                  <span>Centro de atención</span>
+                  <strong>Villeta</strong>
+                </div>
+                <ul class="footer__tab-list">
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-pin.png" alt="map pin" />
+                    </div>
+                    <p>Carrera 4 No. 4 - 39</p>
+                  </li>
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-phone.png" alt="phone" />
+                    </div>
+                    <p>
+                      <a class="inlinLink" href="tel:+57 (601) 890 28 33"
+                        >57 (601) 890 28 33</a
+                      >
+                    </p>
+                  </li>
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-clock.png" alt="" />
+                    </div>
+                    <p>
+                      Lunes a viernes de <br />
+                      <span>08:00 a.m. a 12:00 p.m</span> <br />
+                      <span>02:00 p.m. a 05:00 p.m.</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__tab">
+                <div class="footer__tab-title">
+                  <span>Centro de atención</span>
+                  <strong>Funza</strong>
+                </div>
+                <ul class="footer__tab-list">
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-pin.png" alt="map pin" />
+                    </div>
+                    <p>Carrera 15 No. 12 - 28</p>
+                  </li>
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-phone.png" alt="phone" />
+                    </div>
+                    <p>
+                      <a class="inlinLink" href="tel:+57 (601) 890 28 33"
+                        >57 (601) 890 28 33</a
+                      >
+                    </p>
+                  </li>
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-clock.png" alt="" />
+                    </div>
+                    <p>
+                      Lunes a viernes de <br />
+                      <span>08:00 a.m. a 12:00 p.m</span> <br />
+                      <span>02:00 p.m. a 05:00 p.m.</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__tab">
+                <div class="footer__tab-title">
+                  <span>Centro de atención</span>
+                  <strong>Pacho</strong>
+                </div>
+                <ul class="footer__tab-list">
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-pin.png" alt="map pin" />
+                    </div>
+                    <p>Carrera 7 No. 18 - 71</p>
+                  </li>
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-phone.png" alt="phone" />
+                    </div>
+                    <p>
+                      <a class="inlinLink" href="tel:+57 (601) 890 28 33"
+                        >57 (601) 890 28 33</a
+                      >
+                    </p>
+                  </li>
+                  <li class="footer__tab-item">
+                    <div class="footer__tab-item-ico">
+                      <img src="images/icons/contact-clock.png" alt="" />
+                    </div>
+                    <p>
+                      Lunes a viernes de <br />
+                      <span>08:00 a.m. a 12:00 p.m</span> <br />
+                      <span>02:00 p.m. a 05:00 p.m.</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__inner-buttons">
+              <a href="" class="button button--outlined button--light"
+                >Sedes y horarios</a
+              >
+              <a href="" class="button button--outlined button--light"
+                >Contáctenos</a
+              >
+              <a href="" class="button button--outlined button--light"
+                >Llámenos</a
+              >
+              <a href="" class="button button--outlined button--light"
+                >WhatsApp</a
+              >
+            </div>
+            <div class="footer__inner-info">
+              <p>
+                Horario de atención virtual: Lunes a viernes de 08:00 a.m. a
+                12:00 p.m. y 02:00 p.m. a 05:00 p.m.
+              </p>
+              <div class="footer__inner-info-row">
+                <span>
+                  PBX:
+                  <a
+                    class="inlinLink"
+                    href="tel:+57 (601) 
+                  8902833"
+                    >57 (601) 8902833</a
+                  >
+                </span>
+                <span>
+                  <a
+                    class="inlinLink"
+                    href="mailto:notificacionesjudiciales@ccfacatativa.org.co"
+                  >
+                    notificacionesjudiciales@ccfacatativa.org.co
+                  </a>
+                </span>
+                <span>Únicamente para WhatsApp: 3106691309</span>
+              </div>
+            </div>
+            <div class="footer__inner-social">
+              <a href="#" class="button button--ico">
+                <img src="images/icons/social-facebook.png" alt="facebook" />
+              </a>
+              <a href="#" class="button button--ico">
+                <img src="images/icons/social-twitter.png" alt="twitter" />
+              </a>
+              <a href="#" class="button button--ico">
+                <img src="images/icons/social-youtube.png" alt="youtube" />
+              </a>
+            </div>
+            <div class="footer__inner-links">
+              <a class="footer__inner-link" href="">Promociones y desarrollo</a>
+              <a class="footer__inner-link" href=""
+                >Municipios de Jurisdicción</a
+              >
+              <a class="footer__inner-link" href="">Términos y Condiciones</a>
+              <a class="footer__inner-link" href=""
+                >Declaración de Privacidad</a
+              >
+              <a class="footer__inner-link" href="">Políticas de Información</a>
+              <a class="footer__inner-link" href="">Ley de Transparencia</a>
+              <a class="footer__inner-link" href="">
+                Política de Tratamientos de Datos Personales
+              </a>
+              <a class="footer__inner-link" href="">Mapa de sitio</a>
+            </div>
+          </div>
+          <div class="footer__sub">
+            <div class="footer__sub-title">
+              <div class="logo">
+                <img src="images/logo.png" alt="logo" />
+              </div>
+              <div class="footer__sub-title-group">
+                <strong>Cámara de Comercio de Facatativá </strong>
+                Todos los derechos reservados - 2023
+              </div>
+            </div>
+            <div class="footer__sub-info">
+              La Cámara de Comercio de Facatativá es una organización privada,
+              gremial y sin ánimo de lucro dedicada fundamentalmente a prestar
+              servicios delegados por el estado de alta calidad de manera
+              eficiente.
+            </div>
+          </div>
         </div>
       </footer>
       <!-- #footer end -->
     </div>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
     <script src="js/swiper.js"></script>
   </body>
 </html>
