@@ -157,7 +157,218 @@
     }
   }
 }
+.grid {
+  margin: auto 0;
+  padding: 20px 0 40px;
+  &__inner {
+    &-row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &Item {
+    width: calc(25% - 15px);
+    max-width: 275px;
+    background: rgba($white, 0.08);
+    font-size: 14px;
+    border-radius: 1.1em;
+    border: 1px solid $primary;
+    &__image {
+      margin: -1px -1px 0;
+      border-radius: 1.1em 1.1em 0 0;
+      overflow: hidden;
+    }
+    &__content {
+      &-title {
+        position: relative;
+        font-size: 16px;
+        line-height: 130%;
+        padding: 0.6em 1em;
+        //display
+        display: flex;
+        flex-direction: column;
+        color: $primary;
 
+        strong {
+          font-size: 1.25em;
+          line-height: 130%;
+        }
+
+        &:after {
+          position: absolute;
+          content: "";
+          top: 100%;
+          left: 5%;
+          width: 90%;
+          height: 1px;
+          background: rgba($white, 0.5);
+        }
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        font-size: inherit;
+        gap: 1em;
+        padding: 1em;
+      }
+      &-body {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.6em;
+        line-height: 1.15em;
+
+        &-ico {
+          width: 1.3em;
+          height: 1.3em;
+
+          svg,
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.form {
+  margin: auto 0;
+  padding: 25px 0 40px;
+  &__inner {
+    &-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &-info {
+      width: calc(50% - 10px);
+      max-width: 560px;
+      position: relative;
+      border-radius: 8px;
+      &::before {
+        content: "";
+        width: 1000%;
+        height: 100%;
+        background: $black-6;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        border-radius: inherit;
+      }
+      h3 {
+        font-weight: 400;
+        padding: 0.8em 2em 0.8em 0;
+      }
+    }
+    &-content {
+      width: calc(50% - 10px);
+      max-width: 575px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      &-item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 15px;
+        p {
+          color: $black-5;
+        }
+        a {
+          text-decoration: underline;
+          display: inline;
+          font-weight: 700;
+          color: $black-5;
+          @include transition;
+          &:hover {
+            opacity: 7;
+          }
+        }
+        .input {
+          width: 16px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}
+.info {
+  margin: auto 0;
+  padding: 25px 0 40px;
+  &__inner {
+    &-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      &._sm {
+        align-items: flex-start;
+      }
+    }
+  }
+  &Item {
+    width: calc(50% - 10px);
+    background: $black-6;
+    padding: 32px 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    &._lg {
+      width: 100%;
+    }
+    h2 {
+      color: $primary-1;
+    }
+    &._sm {
+      padding: 0;
+      background: unset;
+      align-items: flex-start;
+    }
+    &__question {
+      background: $white;
+      padding: 16px;
+      box-shadow: $shadowEase;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      p {
+        font-weight: 700;
+        color: $black;
+      }
+    }
+  }
+  &Buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: calc(50% - 10px);
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: $blue-light;
+      border-radius: 8px;
+      padding: 16px;
+      &-body {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+    }
+    .button {
+      &--ico {
+        height: 1.2em;
+      }
+    }
+  }
+}
 @mixin index-1160 {
   .slider {
     &__inner {
@@ -185,7 +396,6 @@
     }
   }
 }
-
 @mixin index-940 {
   .slider {
     &__inner {
@@ -205,7 +415,6 @@
     }
   }
 }
-
 @mixin index-768 {
   .slider {
     &__inner {
