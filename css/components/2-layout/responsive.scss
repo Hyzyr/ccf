@@ -1,11 +1,19 @@
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
+  @include header-1200;
 }
 @media (max-width: 1160px) {
   .autoContainer {
     padding: 0 40px;
   }
+  ._hideDes {
+    display: block;
+  }
   @include footer-1160;
   @include index-1160;
+  @include header-1160;
+  @include typography-1160;
+  @include components-1160;
+
 }
 @media (max-width: 1025px) {
   .autoContainer {
@@ -13,6 +21,8 @@
   }
   @include index-1025;
   @include footer-1025;
+  @include typography-1025;
+  @include components-1025;
 }
 
 @media (max-width: 940px) {
@@ -22,12 +32,24 @@
   @include index-940;
   @include footer-940;
 }
+
+@media (max-width: 840px) {
+  @include typography-840;
+}
 @media (max-width: 768px) {
   .autoContainer {
     padding: 0 15px;
   }
   @include index-768;
   @include footer-768;
+  @include header-768;
+  @include typography-768;
+}
+@media (max-width: 670px) {
+  @include header-670;
+  @include typography-670;
+  @include index-670;
+  @include component-670;
 }
 @media (max-width: 580px) {
   ._hideMob {
@@ -35,8 +57,24 @@
   }
   @include footer-580;
   @include index-580;
+  @include header-580;
+  @include component-580;
 }
+
 @media (max-width: 460px) {
   @include footer-460;
   @include index-460;
+  @include header-460;
+  @include typography-460;
+  @include component-460;
+}
+@media (max-width: 370px) {
+  @include header-370;
+  @include typography-370;
+  @include component-370;
+}
+@media (max-width: 340px) {
+  @include header-340;
+  @include index-340;
+  @include component-340;
 }

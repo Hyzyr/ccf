@@ -361,6 +361,9 @@
         align-items: center;
         gap: 25px;
       }
+      h3 {
+        width: calc(100% - 85px);
+      }
     }
     .button {
       &--ico {
@@ -386,6 +389,12 @@
       }
     }
   }
+  .info {
+    &Item {
+      gap: 15px;
+      padding: 28px 35px;
+    }
+  }
 }
 @mixin index-1025 {
   .slider {
@@ -393,6 +402,16 @@
       .tabs {
         gap: 25px;
       }
+    }
+  }
+  .grid {
+    &__inner {
+      &-row {
+        gap: 10px;
+      }
+    }
+    &Item {
+      width: calc(25% - 5px);
     }
   }
 }
@@ -414,6 +433,75 @@
       }
     }
   }
+  .grid {
+    &__inner {
+      &-row {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+    &Item {
+      width: calc(50% - 15px);
+      max-width: 350px;
+    }
+  }
+  .form {
+    &__inner {
+      &-body {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+      }
+      &-info {
+        width: 100%;
+        max-width: 450px;
+        &::before {
+          width: 100%;
+        }
+        h3 {
+          padding: 0.8em 2em;
+        }
+      }
+      &-content {
+        width: 100%;
+        max-width: 450px;
+      }
+    }
+  }
+  .info {
+    &__inner {
+      &-body {
+        gap: 20px;
+      }
+      &-row {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 630px;
+        margin: 0 auto;
+        width: 100%;
+        grid-gap: 20px;
+      }
+    }
+    &Item {
+      width: 100%;
+      padding: 25px;
+      &__question {
+        width: 100%;
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    &Buttons {
+      width: 100%;
+      h3{
+        font-weight: 400;
+      }
+    }
+  }
+}
+@mixin header-840 {
 }
 @mixin index-768 {
   .slider {
@@ -438,6 +526,23 @@
     }
   }
 }
+@mixin index-670 {
+  .grid {
+    &__inner {
+      &-row {
+        gap: 20px 15px;
+      }
+    }
+    &Item {
+      width: calc(50% - 10px);
+      &__content {
+        &-title {
+          padding-bottom: 0.2em;
+        }
+      }
+    }
+  }
+}
 @mixin index-580 {
   .slider {
     &__inner {
@@ -457,6 +562,39 @@
       }
     }
   }
+  .grid {
+    padding: 10px 0 32px;
+    &__inner {
+      &-row {
+        gap: 20px 10px;
+      }
+    }
+    &Item {
+      width: calc(50% - 5px);
+      &__content {
+      }
+    }
+  }
+  .info {
+    padding: 10px 0 32px;
+    &Item {
+      padding: 16px;
+      gap: 10px;
+    }
+    &Buttons {
+      &__item {
+        h3 {
+          width: calc(100% - 65px);
+        }
+        &-body{
+          gap: 15px;
+        }
+      }
+    }
+  }
+  .form{
+    padding: 10px 0 32px;
+   }
 }
 @mixin index-460 {
   .slider {
@@ -477,6 +615,48 @@
         padding: 0.6em;
         white-space: nowrap;
       }
+    }
+  }
+  .grid {
+    &__inner {
+      &-row {
+        gap: 24px;
+      }
+    }
+    &Item {
+      width: 90%;
+    }
+  }
+  .form {
+    &__inner {
+      &-info {
+        h3 {
+          padding: 1.2em;
+        }
+      }
+      &-content {
+        &-item {
+          gap: 10px;
+          p {
+            font-size: 12px;
+          }
+          .checkbox {
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin index-340 {
+  .grid {
+    &__inner {
+      &-row {
+        gap: 20px;
+      }
+    }
+    &Item {
+      width: 100%;
     }
   }
 }
