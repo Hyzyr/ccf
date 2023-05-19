@@ -372,6 +372,90 @@
     }
   }
 }
+.contact {
+  padding: 15px 0 40px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px 0;
+  }
+  &Item {
+    width: calc(33.3% - 10px);
+    max-width: 352px;
+    border-radius: 1em;
+    box-shadow: $shadowEase-2;
+    background: $white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 1em;
+    gap: 16px;
+    &__info {
+      width: calc(100% - 72px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      h4 {
+        font-weight: 400;
+        color: $black-3;
+        width: calc(100% - 44px);
+        strong {
+          font-weight: 700;
+        }
+      }
+    }
+    &__image {
+      width: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    &__content {
+      padding: 1em;
+      box-shadow: $shadowEase-2;
+      border-radius: 1em;
+      max-width: 104px;
+      width: calc(33.3% - 10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      @include transition;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    &._row {
+      box-shadow: unset;
+      background-color: unset;
+      padding: 0;
+      justify-content: space-between;
+    }
+    .button {
+      &--ico {
+        height: 1.9em;
+      }
+    }
+  }
+}
+@mixin index-1200 {
+  .contact {
+    &__inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    &Item {
+      width: calc(50% - 15px);
+      max-width: unset;
+    }
+  }
+}
 @mixin index-1160 {
   .slider {
     &__inner {
@@ -396,6 +480,7 @@
     }
   }
 }
+
 @mixin index-1025 {
   .slider {
     &__inner {
@@ -495,13 +580,31 @@
     }
     &Buttons {
       width: 100%;
-      h3{
+      h3 {
         font-weight: 400;
       }
     }
   }
 }
-@mixin header-840 {
+@mixin index-840 {
+  .contact {
+    &__inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    &Item {
+      width: calc(50% - 5px);
+      &__info {
+        width: calc(100% - 55px);
+      }
+      &__image {
+        width: 45px;
+      }
+      h4 {
+        font-size: 14px;
+      }
+    }
+  }
 }
 @mixin index-768 {
   .slider {
@@ -540,6 +643,16 @@
           padding-bottom: 0.2em;
         }
       }
+    }
+  }
+  .contact {
+    &__inner {
+      max-width: 500px;
+      gap: 10px;
+    }
+    &Item {
+      width: 100%;
+      gap: 10px;
     }
   }
 }
@@ -586,15 +699,15 @@
         h3 {
           width: calc(100% - 65px);
         }
-        &-body{
+        &-body {
           gap: 15px;
         }
       }
     }
   }
-  .form{
+  .form {
     padding: 10px 0 32px;
-   }
+  }
 }
 @mixin index-460 {
   .slider {
@@ -657,6 +770,25 @@
     }
     &Item {
       width: 100%;
+    }
+  }
+  .contact {
+    &__inner {
+      max-width: 500px;
+    }
+    &Item {
+      width: 100%;
+      gap: 10px;
+      font-size: 14px;
+      &__info {
+        width: calc(100% - 40px);
+        h4 {
+          font-size: 12px;
+        }
+      }
+      &__image {
+        width: 35px;
+      }
     }
   }
 }

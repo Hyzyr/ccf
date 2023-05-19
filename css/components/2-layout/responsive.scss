@@ -1,5 +1,6 @@
 @media (max-width: 1200px) {
   @include header-1200;
+  @include index-1200;
 }
 @media (max-width: 1160px) {
   .autoContainer {
@@ -35,6 +36,7 @@
 
 @media (max-width: 840px) {
   @include typography-840;
+  @include index-840;
 }
 @media (max-width: 768px) {
   .autoContainer {
